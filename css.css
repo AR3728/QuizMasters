@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Oswald);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+body {
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+li {
+  list-style: none;
+}
+.header {
+  background-color: #241a99;
+  color: #fff;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 0px 20px;
+}
+
+.header-list li {
+  float: right;
+  padding-right:40px;
+}
+@media print{
+	img{page-break-inside:avoid}
+	img{max-width:100%!important}
+	h2,p{orphans:3;widows:3}
+	h2{page-break-after:avoid}
+	}
+*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+html{font-size:10px;-webkit-tap-highlight-color:transparent}
+body{font-family:Lato,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.58;color:#555;background-color:#fff}
+.img-responsive{display:block;max-width:100%;height:auto}
+h1{font-family:Oswald,Helvetica,Arial,sans-serif;font-weight:400;line-height:1.1;color:#000;font-size:63px}
+h2{font-size:27px}
+p{margin:0 0 12.5px}
+@media (min-width:768px){
+.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}
+.container:after,.container:before{content:" ";display:table}
+.container:after{clear:both}@media (min-width:768px){.container{width:750px}}
+@media (min-width:992px){.container{width:970px}}
+@media (min-width:1200px){.container{width:1170px}}
+.row:after,.row:before{content:" ";display:table}
+.row:after{clear:both}
+.col-md-4,.col-md-8,.col-xs-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}
+.col-xs-12{float:left;width:100%}
+@media (min-width:992px){
+	.col-md-4,.col-md-8{float:left}
+	.col-md-4{width:33.33333%}
+	.col-md-8{width:66.66667%}
+}
+body{
+	background-image:linear-gradient(180deg,#241a99 0,#5e50fa);
+}
+body.white{background-color:#fff;background-image:none}
+.white-text-container,.white-text-container h1,.white-text-container p{color:#fff}
+.content-wrapper{position:relative;z-index:1}
+.section-container{padding:60px 0 40px}
+.footer-container{padding:20px 0 30px}
+.card{border-radius:.25rem;background-color:#fff;border:1px solid rgba(0,0,0,.125);margin-bottom:3rem}
+.card .h2,.card h2{margin-top:0;margin-bottom:40px}.card .card-block{padding:4rem}
+@media (min-width:992px){
+	.card .card-block{padding:6rem}
+}
